@@ -8,6 +8,7 @@ import { CharactersDetailPageRoutingModule } from './characters-detail-routing.m
 
 import { CharactersDetailPage } from './characters-detail.page';
 import { PipesModule } from 'src/app/pipes/pipes.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
     FormsModule,
     IonicModule,
     PipesModule,
+    TranslateModule,
     CharactersDetailPageRoutingModule
   ],
   declarations: [CharactersDetailPage]

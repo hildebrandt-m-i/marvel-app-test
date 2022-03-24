@@ -9,18 +9,18 @@
 
 <ion-content>
   <div class="container">
-    <img [src]="character.thumbnail.path | img: 'large'">
+    <img class="image-character" [src]="character.thumbnail.path | img: 'large'">
     <div class="detail">
       <div class="item-detail">
-        <span>Cantidad de comics disponibles:</span>
+        <span>{{ 'item-detail-comics' | translate }}</span>
         {{ character.comics.available }}
       </div>
       <div class="item-detail">
-        <span>Cantidad de series disponibles:</span>
+        <span>{{ 'item-detail-series' | translate }}</span>
         {{ character.series.available }}
       </div>
       <div class="item-detail">
-        <span>Cantidad de stories disponibles:</span>
+        <span>{{ 'item-detail-stories' | translate }}</span>
         {{ character.stories.available }}
       </div>
     </div>

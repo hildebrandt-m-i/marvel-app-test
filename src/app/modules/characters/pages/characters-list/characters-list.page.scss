@@ -4,10 +4,12 @@
   height: 20%;
   @include flex(flex, row, center, center);
   .logo {
-    height: 50pt;
+    width: 80%;
   }
 }
-
+.title {
+  margin: 10pt
+}
 .skeleton {
   @include size-card-list(70pt, 10pt);
   box-shadow: 2pt 2pt 4pt var(--ion-color-card-list-shade);

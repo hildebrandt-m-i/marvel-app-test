@@ -2,6 +2,9 @@
   <div class="flex justify-content-center align-items-center logo-container">
     <img class="logo" src="assets/image/marvel.svg">
   </div>
+  <div class="title">
+    <h3>{{ 'characters' | translate }}</h3>
+  </div>
   <ng-container *ngIf="hasCharacters; else skeleton">
     <app-char-card-list
       *ngFor="let character of characters"

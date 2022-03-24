@@ -8,6 +8,7 @@ import { CharactersListPageRoutingModule } from './characters-list-routing.modul
 
 import { CharactersListPage } from './characters-list.page';
 import { ComponentsModule } from '../../components/components.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ComponentsModule } from '../../components/components.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
+    TranslateModule,
     CharactersListPageRoutingModule
   ],
   declarations: [CharactersListPage]
