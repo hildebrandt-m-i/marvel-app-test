@@ -1,0 +1,16 @@
+@mixin flex($display, $direction, $justify-content, $align-items) {
+  display: $display;
+  direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin size-card-list($height, $width) {
+  height: $height;
+  margin: $width;
+}
+
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}

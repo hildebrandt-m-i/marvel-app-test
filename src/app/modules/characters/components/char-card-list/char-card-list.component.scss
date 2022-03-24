@@ -1,13 +1,4 @@
 @import 'src/theme/mixins.scss';
-
-.logo-container {
-  height: 20%;
-  @include flex(flex, row, center, center);
-  .logo {
-    height: 50pt;
-  }
-}
-
 .card-character {
   @include size-card-list(70pt, 10pt);
   padding: 10pt;
@@ -23,9 +14,3 @@
     @include font(12pt, 600);
   }
 }
-
-.skeleton {
-  @include size-card-list(70pt, 10pt);
-  box-shadow: 2pt 2pt 4pt var(--ion-color-card-list-shade);
-}
-

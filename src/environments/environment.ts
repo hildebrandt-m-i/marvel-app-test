@@ -1,16 +1,15 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
-export const environment = {
-  production: false
+const API_URL = {
+  baseUrl: 'https://gateway.marvel.com:443/v1/public',
+  characters: '/characters'
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+const AUTHORIZATION_DATA = {
+  apiKey: '2cb93019ef5d08d97360030115074171',
+  hash: '0e8dc7fae032e7b705c5aa6ce0ad29ab'
+};
+
+export const environment = {
+  production: false,
+  endpoints: API_URL,
+  authorization: AUTHORIZATION_DATA
+};

@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { CharactersListPageRoutingModule } from './characters-list-routing.module';
 
 import { CharactersListPage } from './characters-list.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     CharactersListPageRoutingModule
   ],
   declarations: [CharactersListPage]
