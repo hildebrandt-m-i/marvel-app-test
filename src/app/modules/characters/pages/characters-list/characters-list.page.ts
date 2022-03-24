@@ -1,5 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { MAIN_ROUTES } from 'src/app/constants/main-routes';
 import { Character } from '../../models/characters-model';
 import { CharactersService } from '../../services/characters.service';
 
@@ -17,7 +20,10 @@ export class CharactersListPage implements OnInit {
     return this.characters.length > 0;
   }
 
-  constructor(private charactersService: CharactersService) { }
+  constructor(
+    private charactersService: CharactersService,
+    private navCtrl: NavController
+  ) { }
 
   ngOnInit() {
     this.charactersService.getCharacters()
@@ -27,7 +33,10 @@ export class CharactersListPage implements OnInit {
   }
 
   public goToDetail(character: Character): void {
-    console.log(character);
+    const params: NavigationExtras = {
+      state: {character}
+    };
+    this.navCtrl.navigateForward([MAIN_ROUTES.CHARACTERS_DETAIL], params);
   }
 
 }

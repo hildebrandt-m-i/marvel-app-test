@@ -12,7 +12,7 @@ export class ImagePipe implements PipeTransform {
 
     const sizes: { [key: string]: string } = {
       small: 'portrait_small',
-      standard: 'portrait_fantastic'
+      large: 'portrait_uncanny'
     };
     const img = `${imgUrl}/${sizes[size]}.jpg`;
     return img;

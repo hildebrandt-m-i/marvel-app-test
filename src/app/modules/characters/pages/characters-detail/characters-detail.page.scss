@@ -1,0 +1,15 @@
+@import 'src/theme/mixins.scss';
+.container {
+  @include flex(flex, column, space-between, center);
+  .detail {
+    transform: translateY(-20pt);
+    background-color: var(--ion-color-card-list);
+    border-radius: 20pt 20pt 0 0;
+    padding: 10pt;
+    .item-detail {
+      @include flex(flex, row, space-between, center);
+      @include font(10pt, 600);
+      padding: 10pt;
+    }
+  }
+}

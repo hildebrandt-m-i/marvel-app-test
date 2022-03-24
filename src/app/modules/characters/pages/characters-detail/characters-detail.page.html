@@ -1,12 +1,28 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" color="dark"></ion-back-button>
+      <ion-back-button [defaultHref]="backUrl" color="light"></ion-back-button>
     </ion-buttons>
-    <ion-title>characters-detail</ion-title>
+    <ion-title>{{ character.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="container">
+    <img [src]="character.thumbnail.path | img: 'large'">
+    <div class="detail">
+      <div class="item-detail">
+        <span>Cantidad de comics disponibles:</span>
+        {{ character.comics.available }}
+      </div>
+      <div class="item-detail">
+        <span>Cantidad de series disponibles:</span>
+        {{ character.series.available }}
+      </div>
+      <div class="item-detail">
+        <span>Cantidad de stories disponibles:</span>
+        {{ character.stories.available }}
+      </div>
+    </div>
+  </div>
 </ion-content>

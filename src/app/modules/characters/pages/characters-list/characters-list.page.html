@@ -7,7 +7,7 @@
       *ngFor="let character of characters"
       [character]="character"
       (click)="goToDetail(character)"
-     ></app-char-card-list>
+    ></app-char-card-list>
   </ng-container>
   <ng-template #skeleton>
     <ion-skeleton-text animated class="skeleton rounded-10" *ngFor="let skeleton of skeletons"></ion-skeleton-text>

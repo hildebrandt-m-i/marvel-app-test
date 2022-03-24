@@ -8,22 +8,6 @@
   }
 }
 
-.card-character {
-  @include size-card-list(70pt, 10pt);
-  padding: 10pt;
-  background-color: var(--ion-color-card-list);
-  box-shadow: 2pt 2pt 4pt var(--ion-color-card-list-shade);
-  .logo-comic {
-    height: 50pt;
-    border-radius: 5pt;
-  }
-  .title-comic {
-    padding: 10pt;
-    align-self: center;
-    @include font(12pt, 600);
-  }
-}
-
 .skeleton {
   @include size-card-list(70pt, 10pt);
   box-shadow: 2pt 2pt 4pt var(--ion-color-card-list-shade);
