@@ -44,8 +44,14 @@ export interface Stories {
 export interface StoriesItem {
   resourceURI: string;
   name:        string;
+  type:        ItemType;
 }
 
+export enum ItemType {
+  Cover = "cover",
+  Empty = "",
+  InteriorStory = "interiorStory",
+}
 
 export interface Thumbnail {
   path:      string;
