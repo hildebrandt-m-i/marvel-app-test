@@ -1,4 +1,4 @@
-# marvel-app-test - Test Winsystems
+# Marvel-app-test - Test Winsystems
 Esta es una pequeña aplicación requerida para un test. La finalidad de la misma es mostrar un listado de superheroes.
 Al tocar en un superheroe te lleva a otra pantalla donde se puede visualizar la cantidad de series, comics y stories en las que participa.
 
